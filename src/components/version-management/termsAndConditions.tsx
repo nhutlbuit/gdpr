@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Switch, Route, useHistory } from 'react-router-dom';
-import StudentDashBoard from '../student/StudentDashBoard';
-import StudentDetail from '../student/StudentDetail';
+import { useHistory } from 'react-router-dom';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 function TermsAndConditions() {
 
@@ -21,26 +21,26 @@ function TermsAndConditions() {
   return (
     <div className="content-container">
       <div>
-        <div >
-          <Switch>
-            <Route
-              exact
-              path="/termsAndConditions"
-              component={() => (
-                <StudentDashBoard addNewStudent={addStudent} editStudent={editStudent}/>
-              )}
-            />
-            <Route
-              exact
-              path="/student/:id"
-              component={() => {
-                return (
-                <StudentDetail student={student}/>
-                );
-              }}
-            />
-          </Switch>
-        </div>
+        <Card>
+          <Card.Header style={{ color: 'white', backgroundColor: '#337ab7' }}>Terms And Conditions</Card.Header>
+          <Card.Body>
+            <Card.Title>Special title treatment</Card.Title>
+            <Card.Text>
+              With supporting text below as a natural lead-in to additional content.
+          </Card.Text>
+            
+          </Card.Body>
+        </Card>
+        <Card>
+          <Card.Header style={{ color: 'white', backgroundColor: '#337ab7' }}>Privacy Policy</Card.Header>
+          <Card.Body>
+            <Card.Title>Special title treatment</Card.Title>
+            <Card.Text>
+              With supporting text below as a natural lead-in to additional content.
+          </Card.Text>
+            
+          </Card.Body>
+        </Card>
       </div>
     </div>
   );
