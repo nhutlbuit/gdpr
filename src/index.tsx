@@ -28,6 +28,6 @@ ReactDOM.render(
     </BrowserRouter>
   </Provider>,
 
-document.getElementById('dpr')
+document.getElementById('gdpr')
 );
 
