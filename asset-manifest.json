@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/bo-gdpr/static/css/main.1a74d49e.chunk.css",
+    "main.js": "/bo-gdpr/static/js/main.951f3f3e.chunk.js",
+    "main.js.map": "/bo-gdpr/static/js/main.951f3f3e.chunk.js.map",
+    "runtime-main.js": "/bo-gdpr/static/js/runtime-main.55edc9ea.js",
+    "runtime-main.js.map": "/bo-gdpr/static/js/runtime-main.55edc9ea.js.map",
+    "static/css/2.25ff2e5b.chunk.css": "/bo-gdpr/static/css/2.25ff2e5b.chunk.css",
+    "static/js/2.82b66786.chunk.js": "/bo-gdpr/static/js/2.82b66786.chunk.js",
+    "static/js/2.82b66786.chunk.js.map": "/bo-gdpr/static/js/2.82b66786.chunk.js.map",
+    "static/css/3.f3cffc9e.chunk.css": "/bo-gdpr/static/css/3.f3cffc9e.chunk.css",
+    "static/js/3.a6881f92.chunk.js": "/bo-gdpr/static/js/3.a6881f92.chunk.js",
+    "static/js/3.a6881f92.chunk.js.map": "/bo-gdpr/static/js/3.a6881f92.chunk.js.map",
+    "static/js/4.ac801f98.chunk.js": "/bo-gdpr/static/js/4.ac801f98.chunk.js",
+    "static/js/4.ac801f98.chunk.js.map": "/bo-gdpr/static/js/4.ac801f98.chunk.js.map",
+    "index.html": "/bo-gdpr/index.html",
+    "precache-manifest.db58956bae630b259dc268edfae38730.js": "/bo-gdpr/precache-manifest.db58956bae630b259dc268edfae38730.js",
+    "service-worker.js": "/bo-gdpr/service-worker.js",
+    "static/css/2.25ff2e5b.chunk.css.map": "/bo-gdpr/static/css/2.25ff2e5b.chunk.css.map",
+    "static/css/3.f3cffc9e.chunk.css.map": "/bo-gdpr/static/css/3.f3cffc9e.chunk.css.map",
+    "static/css/main.1a74d49e.chunk.css.map": "/bo-gdpr/static/css/main.1a74d49e.chunk.css.map",
+    "static/js/2.82b66786.chunk.js.LICENSE.txt": "/bo-gdpr/static/js/2.82b66786.chunk.js.LICENSE.txt",
+    "static/js/3.a6881f92.chunk.js.LICENSE.txt": "/bo-gdpr/static/js/3.a6881f92.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.55edc9ea.js",
+    "static/css/3.f3cffc9e.chunk.css",
+    "static/js/3.a6881f92.chunk.js",
+    "static/css/main.1a74d49e.chunk.css",
+    "static/js/main.951f3f3e.chunk.js"
+  ]
+}
