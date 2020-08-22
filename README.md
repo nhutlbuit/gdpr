@@ -813,6 +813,9 @@ server {
  \bo-affiliate-ui\src\styles\skins\compress_pa.scss <br/>
  \bo-affiliate-ui\src\styles\skins\compress_pinbet88.scss <br/>
  \bo-affiliate-ui\package-lock.json
+
+
+ deploy github page: https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
  
 
 
