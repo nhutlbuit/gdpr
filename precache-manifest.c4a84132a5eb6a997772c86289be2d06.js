@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5a91b500d75d496c9e5a5992e4d5324d",
+    "revision": "406716f305d4e25aca46b189a5b6221f",
     "url": "/gdpr/index.html"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gdpr/static/css/3.f3cffc9e.chunk.css"
   },
   {
-    "revision": "3b5e529ded7c46ac7334",
+    "revision": "39f5c378fbd8f6711a5a",
     "url": "/gdpr/static/css/main.1a74d49e.chunk.css"
   },
   {
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gdpr/static/js/4.fdfcc6ba.chunk.js"
   },
   {
-    "revision": "3b5e529ded7c46ac7334",
-    "url": "/gdpr/static/js/main.8da1e9d3.chunk.js"
+    "revision": "39f5c378fbd8f6711a5a",
+    "url": "/gdpr/static/js/main.e43a9a5d.chunk.js"
   },
   {
     "revision": "11b0b9e4ac4e95713694",
