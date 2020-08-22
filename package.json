@@ -111,6 +111,7 @@
     "eslint-plugin-react-hooks": "^1.6.1",
     "http-proxy-middleware": "^1.0.3",
     "i18next": "^19.0.2",
+    "moment": "^2.27.0",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-datepicker": "^3.1.3",

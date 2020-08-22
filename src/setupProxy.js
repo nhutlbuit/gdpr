@@ -10,6 +10,14 @@ module.exports = function(app) {
     })
   ),
   app.use(
+    '/mockapi/',
+    createProxyMiddleware({
+      target: '  https://5c06b0f9c16e120013947a9b.mockapi.io',
+      changeOrigin: true,
+      secure: false
+    })
+  ),
+  app.use(
     '/api/',
     createProxyMiddleware({
       target: 'http://localhost:8627',
