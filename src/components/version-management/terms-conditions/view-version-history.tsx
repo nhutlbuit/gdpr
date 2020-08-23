@@ -5,6 +5,8 @@ import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col'
 import Select from 'react-select';
+import './terms-conditions.scss';
+
 
 function ViewVersionHistory(props: any) {
   const { closeViewVersionHistory } = props;
@@ -36,7 +38,7 @@ function ViewVersionHistory(props: any) {
 
   const renderTable = () => {
     return (
-      <table style={{marginTop:'20px'}}>
+      <table className='space-between-row'>
         <thead>
           <tr>
             <th>License</th>
@@ -76,10 +78,8 @@ function ViewVersionHistory(props: any) {
             <Col sm={3}>License:</Col>
             <Col sm={3}>
               <Select
-                style={{ margin: '5px' }}
                 options={options}
                 onChange={onChangeOption}
-                // value={options[0]}
               />
             </Col>
             <Col xs="auto">
@@ -116,7 +116,7 @@ function ViewVersionHistory(props: any) {
           {renderTable()}
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="primary" onClick={handleClose}>
             Close
           </Button>
         </Modal.Footer>

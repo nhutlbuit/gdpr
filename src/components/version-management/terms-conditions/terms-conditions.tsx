@@ -1,17 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import ViewVersionHistory from './view-version-history';
+import AddVersionHistory from './add-version-history';
+import './terms-conditions.scss';
 
-function PrivacyPolicy() {
-
+function TermsAndConditions() {
   const [terms, setTerms] = useState([]);
+  const [viewHistory, setViewHistory] = useState<boolean>(false);
+  const [isAddVersionHistory, setIsAddVersionHistory] = useState<boolean>(false);
 
   useEffect(() => {
     async function fetchStudents() {
       try {
-        const url = `mockapi/policy`;
+        const url = `mockapi/term`;
         const response = await fetch(url);
         const responseJson = await response.json();
+      //  responseJson.map ((e: any) => e.dateChanged = moment(e.dateChanged, 'DD-MM-YYYY'));
         setTerms(responseJson);
       } catch (error) {
         console.log('Failed to fetch data');
@@ -57,29 +62,44 @@ function PrivacyPolicy() {
         </Button>
         &nbsp;
         &nbsp;
-        <Button variant="success" style={{marginTop: '10px'}} onClick={() => viewHistory()}>
+        <Button variant="success" className='view-history-btn' onClick={() => viewHistoryAction()}>
           View History Version
         </Button>
       </div>
     );
   };
 
-  const addVersion = () => {};
+  const addVersion = () => {
+    setIsAddVersionHistory(true);
+  };
 
-  function viewHistory() {}
+  const viewHistoryAction = () => {
+    setViewHistory(true);
+  }
+
+  const closeViewVersionHistory = (isClose: boolean) => {
+    setViewHistory(isClose);
+  }
+
+  const closeAddVersionHistory = (isClose: boolean) => {
+    setIsAddVersionHistory(isClose);
+  }
 
   return (
-    <div className="content-container" style={{ padding: '20px'}}>
+    <div className="term-content-container">
       <div>
-        <Card>
-          <Card.Header style={{ color: 'white', backgroundColor: '#337ab7' }}>
-          Privacy Policy
+        <Card className='card-container'>
+          <Card.Header className='header'>
+            Terms And Conditions
           </Card.Header>
           <Card.Body>
               <div className="row">
                 <div className="col-9">{renderTable()}</div>
                 <div className="col-3">{renderAction()}</div>
               </div>
+              {viewHistory && <ViewVersionHistory closeViewVersionHistory={closeViewVersionHistory}/>}
+              {isAddVersionHistory && <AddVersionHistory closeAddVersionHistory={closeAddVersionHistory}/>}
+              
           </Card.Body>
         </Card>
       </div>
@@ -87,4 +107,4 @@ function PrivacyPolicy() {
   );
 }
 
-export default PrivacyPolicy;
+export default TermsAndConditions;

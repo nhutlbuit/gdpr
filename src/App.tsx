@@ -2,11 +2,9 @@ import React, { Component, lazy, Suspense } from 'react';
 import './styles.scss';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { withRouter } from 'react-router';
-import VersionManagement from './components/version-management/versionManagement';
 
 const Student = withRouter(lazy(() => import('./components/student/Student')));
-const TermsAndConditions = withRouter(lazy(() => import('./components/version-management/termsAndConditions')));
-const PrivacyPolicy =  withRouter(lazy(() => import('./components/version-management/privacyPolicy')));
+const VersionManagement = withRouter(lazy(() => import('./components/version-management/version-management')));
 
 class App extends Component {
   render() {
@@ -19,11 +17,7 @@ class App extends Component {
               <Switch>
                 <Redirect from="/" exact to="/versionManagement" /> 
                 <Route path="/student" component={Student} />  
-                <Route path="/termsAndConditions" component={TermsAndConditions} />  
-                <Route path="/privacyPolicy" component={PrivacyPolicy} />  
-                <Route path="/versionManagement" component={VersionManagement} />  
-
-                
+                <Route path="/versionManagement" component={VersionManagement} />            
               </Switch>
             </Suspense>
           </main>

@@ -1,0 +1,29 @@
+.term-content-container {
+  padding: 0px 20px 0px 20px;
+
+  .card-container {
+    border-color: #aacbe8;
+
+    .header {
+      color: white;
+      background-color: #337ab7;
+    }
+
+    .view-history-btn {
+      margin-top: 10px;
+    }
+  }
+}
+
+.space-between-row {
+  margin-top: 20px;
+
+  .title {
+    font-weight: bold;
+  }
+  
+  .right {
+    text-align: right;
+  }
+}
+

@@ -5,6 +5,7 @@ import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Select from 'react-select';
+import './terms-conditions.scss'
 
 function AddVersionHistory(props: any) {
   const { closeAddVersionHistory } = props;
@@ -47,12 +48,11 @@ function AddVersionHistory(props: any) {
       <div>
         <Form>
           <Form.Row className="align-items-center">
-            <Col sm={3} style={{ textAlign: 'right', fontWeight: 'bold' }}>
+            <Col sm={3} className='title right'>
               License
             </Col>
             <Col sm={9}>
               <Select
-                style={{ margin: '5px' }}
                 options={options}
                 onChange={onChangeOption}
               />
@@ -60,11 +60,10 @@ function AddVersionHistory(props: any) {
           </Form.Row>
 
           <Form.Row
-            className="align-items-center"
-            style={{ marginTop: '20px' }}
+            className="align-items-center space-between-row"
           >
             <Col sm={3}>
-              <Form.Label style={{ fontWeight: 'bold' }}>
+              <Form.Label className='title'>
                 Current Version
               </Form.Label>
               <Form.Control
@@ -74,15 +73,15 @@ function AddVersionHistory(props: any) {
               />
             </Col>
             <Col sm={3}>
-              <Form.Label style={{ fontWeight: 'bold' }}>
+              <Form.Label className='title'>
                 New Version
               </Form.Label>
               <Form.Control type="text" placeholder="New version" />
             </Col>
           </Form.Row>
 
-          <Form.Row className="align-items-center" style={{ marginTop: '20px' }}>
-            <Col sm={3} style={{ textAlign: 'right', fontWeight: 'bold' }}>
+          <Form.Row className="align-items-center space-between-row">
+            <Col sm={3} className='title right'>
               ResetConsent?
             </Col>
             <Col sm={3}>
@@ -91,8 +90,8 @@ function AddVersionHistory(props: any) {
             </Col>
           </Form.Row>
 
-          <Form.Row className="align-items-center" style={{ marginTop: '20px' }}>
-            <Col sm={3} style={{ textAlign: 'right', fontWeight: 'bold' }}>
+          <Form.Row className="align-items-center space-between-row">
+            <Col sm={3} className='title right'>
               Comment
             </Col>
             <Col sm={9}>
@@ -100,8 +99,8 @@ function AddVersionHistory(props: any) {
             </Col>
           </Form.Row>
 
-          <Form.Row className="align-items-center" style={{ marginTop: '20px' }}>
-            <Col sm={3} style={{ textAlign: 'right', fontWeight: 'bold' }}>
+          <Form.Row className="align-items-center space-between-row">
+            <Col sm={3} className='title right'>
               File
             </Col>
             <Col sm={9}>
